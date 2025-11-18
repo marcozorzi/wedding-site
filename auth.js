@@ -1,7 +1,7 @@
 // Password Protection for Wedding Website
 // Note: This is a simple client-side protection. For production, use Netlify's password protection feature.
 
-const CORRECT_PASSWORD = 'wedding2026'; // Change this to your desired password
+const CORRECT_PASSWORD = '22maggio2026'; // Change this to your desired password
 
 function checkPassword() {
   const password = document.getElementById('password-input').value;
