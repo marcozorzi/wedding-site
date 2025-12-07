@@ -61,8 +61,8 @@ function switchLanguage(lang) {
 
 // Initialize language on page load
 window.addEventListener('DOMContentLoaded', function() {
-  // Check for stored language preference
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  // Check for stored language preference (default to Italian)
+  const savedLang = localStorage.getItem('preferredLanguage') || 'it';
 
   // Set initial active state for buttons
   setTimeout(() => {
@@ -71,6 +71,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     if (savedLang === 'en') {
       if (langEnNav) langEnNav.classList.add('active');
+      switchLanguage('en');
     } else {
       if (langItNav) langItNav.classList.add('active');
       switchLanguage('it');

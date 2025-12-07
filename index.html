@@ -18,21 +18,21 @@
       <h1>Antonia & Marco</h1>
       <p class="password-subtitle">Wedding Website</p>
       <div class="password-divider"></div>
-      <p class="password-message">Please enter the password to view this website</p>
+      <p class="password-message">Inserisci la password per visualizzare questo sito</p>
       <input
         type="password"
         id="password-input"
         class="password-input"
-        placeholder="Enter password"
+        placeholder="Inserisci password"
         autocomplete="off"
       />
       <p id="error-message" class="error-message"></p>
-      <button onclick="checkPassword()" class="password-button">Enter</button>
+      <button onclick="checkPassword()" class="password-button">Entra</button>
 
       <!-- Language Toggle -->
       <div class="language-toggle">
-        <button onclick="switchLanguage('en')" class="lang-btn active" id="lang-en">English</button>
-        <button onclick="switchLanguage('it')" class="lang-btn" id="lang-it">Italiano</button>
+        <button onclick="switchLanguage('it')" class="lang-btn active" id="lang-it">Italiano</button>
+        <button onclick="switchLanguage('en')" class="lang-btn" id="lang-en">English</button>
       </div>
     </div>
   </div>
@@ -45,14 +45,13 @@
       <a href="#home" class="logo">A & M</a>
       <ul class="nav-menu">
         <li><a href="#home" data-en="Home" data-it="Home">Home</a></li>
-        <li><a href="#couple" data-en="Couple" data-it="Coppia">Couple</a></li>
-        <li><a href="#story" data-en="Story" data-it="Storia">Story</a></li>
-        <li><a href="#when-where" data-en="When & Where" data-it="Quando & Dove">When & Where</a></li>
+        <li><a href="#couple" data-en="Couple" data-it="Coppia">Coppia</a></li>
+        <li><a href="#when-where" data-en="When & Where" data-it="Quando & Dove">Quando & Dove</a></li>
         <li><a href="#rsvp" data-en="RSVP" data-it="RSVP">RSVP</a></li>
       </ul>
       <div class="language-toggle-nav">
+        <button onclick="switchLanguage('it')" class="lang-btn-nav active" id="lang-it-nav">IT</button>
         <button onclick="switchLanguage('en')" class="lang-btn-nav" id="lang-en-nav">EN</button>
-        <button onclick="switchLanguage('it')" class="lang-btn-nav" id="lang-it-nav">IT</button>
       </div>
     </div>
   </nav>
@@ -61,28 +60,28 @@
   <section id="home" class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <p class="hero-subtitle" data-en="We're Getting Married" data-it="Ci Sposiamo">We're Getting Married</p>
+      <p class="hero-subtitle" data-en="We're Getting Married" data-it="Ci Sposiamo">Ci Sposiamo</p>
       <h1 class="hero-title">Antonia &amp; Marco</h1>
       <div class="hero-divider"></div>
-      <p class="hero-date">May 22, 2026</p>
+      <p class="hero-date">22 Maggio 2026</p>
 
       <!-- Countdown Timer -->
       <div class="countdown">
         <div class="countdown-item">
           <span class="countdown-value" id="days">00</span>
-          <span class="countdown-label" data-en="Days" data-it="Giorni">Days</span>
+          <span class="countdown-label" data-en="Days" data-it="Giorni">Giorni</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-value" id="hours">00</span>
-          <span class="countdown-label" data-en="Hours" data-it="Ore">Hours</span>
+          <span class="countdown-label" data-en="Hours" data-it="Ore">Ore</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-value" id="minutes">00</span>
-          <span class="countdown-label" data-en="Minutes" data-it="Minuti">Minutes</span>
+          <span class="countdown-label" data-en="Minutes" data-it="Minuti">Minuti</span>
         </div>
         <div class="countdown-item">
           <span class="countdown-value" id="seconds">00</span>
-          <span class="countdown-label" data-en="Seconds" data-it="Secondi">Seconds</span>
+          <span class="countdown-label" data-en="Seconds" data-it="Secondi">Secondi</span>
         </div>
       </div>
     </div>
@@ -97,7 +96,7 @@
   <section id="couple" class="couple-section">
     <div class="container">
       <div class="section-header">
-        <h6 class="section-subtitle" data-en="Happy Couple" data-it="La Coppia">Happy Couple</h6>
+        <h6 class="section-subtitle" data-en="Happy Couple" data-it="La Coppia">La Coppia</h6>
         <h2 class="section-title">Antonia &amp; Marco</h2>
         <div class="section-divider"></div>
       </div>
@@ -108,8 +107,8 @@
             <img src="bride.jpg" alt="Antonia" onerror="this.style.display='none'">
           </div>
           <h3>Antonia</h3>
-          <p class="couple-role" data-en="The Bride" data-it="La Sposa">The Bride</p>
-          <p class="couple-bio" data-en="A few words about the bride. Her passions, personality, and what makes her special." data-it="Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.">A few words about the bride. Her passions, personality, and what makes her special.</p>
+          <p class="couple-role" data-en="The Bride" data-it="La Sposa">La Sposa</p>
+          <p class="couple-bio" data-en="A few words about the bride. Her passions, personality, and what makes her special." data-it="Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.">Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.</p>
         </div>
 
         <div class="couple-card">
@@ -117,49 +116,8 @@
             <img src="groom.jpg" alt="Marco" onerror="this.style.display='none'">
           </div>
           <h3>Marco</h3>
-          <p class="couple-role" data-en="The Groom" data-it="Lo Sposo">The Groom</p>
-          <p class="couple-bio" data-en="A few words about the groom. His passions, personality, and what makes him special." data-it="Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.">A few words about the groom. His passions, personality, and what makes him special.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Story Section -->
-  <section id="story" class="story-section">
-    <div class="container">
-      <div class="section-header">
-        <h6 class="section-subtitle" data-en="Our Love Story" data-it="La Nostra Storia">Our Love Story</h6>
-        <h2 class="section-title" data-en="How We Met" data-it="Come Ci Siamo Conosciuti">How We Met</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="story-content">
-        <p data-en="Write your love story here. How did you meet? What was your first date like? Share the memorable moments that brought you together and made you fall in love." data-it="Scrivi qui la vostra storia d'amore. Come vi siete conosciuti? Com'è stato il vostro primo appuntamento? Condividete i momenti memorabili che vi hanno unito.">Write your love story here. How did you meet? What was your first date like? Share the memorable moments that brought you together and made you fall in love.</p>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2020</div>
-            <h4 data-en="First Met" data-it="Primo Incontro">First Met</h4>
-            <p data-en="Where and how you first met each other." data-it="Dove e come vi siete conosciuti.">Where and how you first met each other.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2021</div>
-            <h4 data-en="First Date" data-it="Primo Appuntamento">First Date</h4>
-            <p data-en="Your memorable first date story." data-it="La storia del vostro indimenticabile primo appuntamento.">Your memorable first date story.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2024</div>
-            <h4 data-en="The Proposal" data-it="La Proposta">The Proposal</h4>
-            <p data-en="How the magical proposal happened." data-it="Come è avvenuta la magica proposta.">How the magical proposal happened.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">2026</div>
-            <h4 data-en="Wedding Day" data-it="Giorno del Matrimonio">Wedding Day</h4>
-            <p data-en="Our special day with all our loved ones." data-it="Il nostro giorno speciale con tutte le persone care.">Our special day with all our loved ones.</p>
-          </div>
+          <p class="couple-role" data-en="The Groom" data-it="Lo Sposo">Lo Sposo</p>
+          <p class="couple-bio" data-en="A few words about the groom. His passions, personality, and what makes him special." data-it="Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.">Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.</p>
         </div>
       </div>
     </div>
@@ -169,56 +127,56 @@
   <section id="when-where" class="when-where-section">
     <div class="container">
       <div class="section-header">
-        <h6 class="section-subtitle" data-en="Wedding Details" data-it="Dettagli Matrimonio">Wedding Details</h6>
-        <h2 class="section-title" data-en="When & Where" data-it="Quando & Dove">When &amp; Where</h2>
+        <h6 class="section-subtitle" data-en="Wedding Details" data-it="Dettagli Matrimonio">Dettagli Matrimonio</h6>
+        <h2 class="section-title" data-en="When & Where" data-it="Quando & Dove">Quando &amp; Dove</h2>
         <div class="section-divider"></div>
       </div>
 
       <div class="event-grid">
         <div class="event-card">
           <div class="event-icon">🕐</div>
-          <h4 data-en="Wedding Ceremony" data-it="Cerimonia">Wedding Ceremony</h4>
-          <p class="event-time" data-en="Thursday, May 22, 2026 at 4:00 PM" data-it="Giovedì, 22 Maggio 2026 alle 16:00">Thursday, May 22, 2026 at 4:00 PM</p>
-          <p class="event-location" data-en="Venue Name<br>Venue Address<br>Location, Italy" data-it="Nome Sede<br>Indirizzo Sede<br>Località, Italia">Venue Name<br>Venue Address<br>Location, Italy</p>
+          <h4 data-en="Wedding Ceremony" data-it="Cerimonia">Cerimonia</h4>
+          <p class="event-time" data-en="Thursday, May 22, 2026 at 4:00 PM" data-it="Giovedì, 22 Maggio 2026 alle 16:00">Giovedì, 22 Maggio 2026 alle 16:00</p>
+          <p class="event-location" data-en="Venue Name<br>Venue Address<br>Location, Italy" data-it="Nome Sede<br>Indirizzo Sede<br>Località, Italia">Nome Sede<br>Indirizzo Sede<br>Località, Italia</p>
         </div>
 
         <div class="event-card">
           <div class="event-icon">🍾</div>
-          <h4 data-en="Wedding Reception" data-it="Ricevimento">Wedding Reception</h4>
-          <p class="event-time" data-en="Following the ceremony at 6:00 PM" data-it="A seguire della cerimonia alle 18:00">Following the ceremony at 6:00 PM</p>
-          <p class="event-location" data-en="Reception Venue<br>Venue Address<br>Location, Italy" data-it="Sede Ricevimento<br>Indirizzo Sede<br>Località, Italia">Reception Venue<br>Venue Address<br>Location, Italy</p>
+          <h4 data-en="Wedding Reception" data-it="Ricevimento">Ricevimento</h4>
+          <p class="event-time" data-en="Following the ceremony at 6:00 PM" data-it="A seguire della cerimonia alle 18:00">A seguire della cerimonia alle 18:00</p>
+          <p class="event-location" data-en="Reception Venue<br>Venue Address<br>Location, Italy" data-it="Sede Ricevimento<br>Indirizzo Sede<br>Località, Italia">Sede Ricevimento<br>Indirizzo Sede<br>Località, Italia</p>
         </div>
       </div>
 
       <div class="schedule-box">
-        <h4 data-en="Schedule of Events" data-it="Programma">Schedule of Events</h4>
+        <h4 data-en="Schedule of Events" data-it="Programma">Programma</h4>
         <div class="schedule-list">
           <div class="schedule-item">
-            <span class="schedule-time">3:30 PM</span>
-            <span class="schedule-event" data-en="Guests Arrive" data-it="Arrivo Ospiti">Guests Arrive</span>
+            <span class="schedule-time">15:30</span>
+            <span class="schedule-event" data-en="Guests Arrive" data-it="Arrivo Ospiti">Arrivo Ospiti</span>
           </div>
           <div class="schedule-item">
-            <span class="schedule-time">4:00 PM</span>
-            <span class="schedule-event" data-en="Ceremony Begins" data-it="Inizio Cerimonia">Ceremony Begins</span>
+            <span class="schedule-time">16:00</span>
+            <span class="schedule-event" data-en="Ceremony Begins" data-it="Inizio Cerimonia">Inizio Cerimonia</span>
           </div>
           <div class="schedule-item">
-            <span class="schedule-time">5:00 PM</span>
-            <span class="schedule-event" data-en="Cocktail Hour" data-it="Aperitivo">Cocktail Hour</span>
+            <span class="schedule-time">17:00</span>
+            <span class="schedule-event" data-en="Cocktail Hour" data-it="Aperitivo">Aperitivo</span>
           </div>
           <div class="schedule-item">
-            <span class="schedule-time">6:00 PM</span>
-            <span class="schedule-event" data-en="Reception & Dinner" data-it="Ricevimento & Cena">Reception & Dinner</span>
+            <span class="schedule-time">18:00</span>
+            <span class="schedule-event" data-en="Reception & Dinner" data-it="Ricevimento & Cena">Ricevimento & Cena</span>
           </div>
           <div class="schedule-item">
-            <span class="schedule-time">9:00 PM</span>
-            <span class="schedule-event" data-en="Party & Dancing" data-it="Festa & Ballo">Party & Dancing</span>
+            <span class="schedule-time">21:00</span>
+            <span class="schedule-event" data-en="Party & Dancing" data-it="Festa & Ballo">Festa & Ballo</span>
           </div>
         </div>
       </div>
 
       <div class="travel-info">
-        <h4 data-en="Travel & Accommodation" data-it="Viaggio & Alloggio">Travel & Accommodation</h4>
-        <p data-en="Information about nearby airports, train stations, and recommended hotels for our guests." data-it="Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.">Information about nearby airports, train stations, and recommended hotels for our guests.</p>
+        <h4 data-en="Travel & Accommodation" data-it="Viaggio & Alloggio">Viaggio & Alloggio</h4>
+        <p data-en="Information about nearby airports, train stations, and recommended hotels for our guests." data-it="Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.">Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.</p>
       </div>
     </div>
   </section>
@@ -227,10 +185,10 @@
   <section id="rsvp" class="rsvp-section">
     <div class="container">
       <div class="section-header">
-        <h6 class="section-subtitle" data-en="Join Our Celebration" data-it="Unisciti alla Festa">Join Our Celebration</h6>
+        <h6 class="section-subtitle" data-en="Join Our Celebration" data-it="Unisciti alla Festa">Unisciti alla Festa</h6>
         <h2 class="section-title">RSVP</h2>
         <div class="section-divider"></div>
-        <p data-en="Please confirm your attendance by filling out the form below." data-it="Si prega di confermare la propria presenza compilando il modulo qui sotto.">Please confirm your attendance by filling out the form below.</p>
+        <p data-en="Please confirm your attendance by filling out the form below." data-it="Si prega di confermare la propria presenza compilando il modulo qui sotto.">Si prega di confermare la propria presenza compilando il modulo qui sotto.</p>
       </div>
 
       <div class="rsvp-form-container">
@@ -247,9 +205,9 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p class="footer-text" data-en="Can't wait to celebrate with you!" data-it="Non vediamo l'ora di festeggiare con voi!">Can't wait to celebrate with you!</p>
+    <p class="footer-text" data-en="Can't wait to celebrate with you!" data-it="Non vediamo l'ora di festeggiare con voi!">Non vediamo l'ora di festeggiare con voi!</p>
     <p class="footer-names">Antonia &amp; Marco</p>
-    <p class="footer-date">May 22, 2026</p>
+    <p class="footer-date">22 Maggio 2026</p>
   </footer>
 
   <script src="script.js"></script>
