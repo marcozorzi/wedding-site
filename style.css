@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-  --primary-color: #a2b49b;
-  --secondary-color: #e2c6c3;
+  --primary-color: #e2c6c3;
+  --secondary-color: #a2b49b;
   --text-color: #555;
   --light-bg: #f9f9f9;
   --white: #ffffff;
@@ -256,7 +256,7 @@ section {
 
 /* Couple Section */
 .couple-section {
-  background: var(--white);
+  background: var(--light-bg);
 }
 
 .couple-grid {
@@ -383,7 +383,26 @@ section {
 
 /* When & Where Section */
 .when-where-section {
-  background: var(--white);
+  background: var(--light-bg);
+  position: relative;
+}
+
+.when-where-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('resources/bg_1.jpeg') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.when-where-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .event-grid {
@@ -508,29 +527,45 @@ section {
   color: #2c2c2c;
 }
 
-/* Travel Info */
-.travel-info {
-  max-width: 700px;
+/* Travel Section */
+.travel-section {
+  background: var(--white);
+}
+
+.travel-content {
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-.travel-info h4 {
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 600;
-  color: #2c2c2c;
-  margin-bottom: 1rem;
-}
-
-.travel-info p {
-  font-size: 1rem;
-  line-height: 1.8;
+.travel-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-color);
 }
 
 /* RSVP Section */
 .rsvp-section {
-  background: var(--light-bg);
+  background: var(--white);
+  position: relative;
+}
+
+.rsvp-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('resources/bg_2.jpeg') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.rsvp-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .rsvp-form-container {
@@ -548,7 +583,7 @@ section {
 
 /* Honeymoon Section */
 .honeymoon-section {
-  background: var(--white);
+  background: var(--light-bg);
 }
 
 .honeymoon-content {
@@ -594,7 +629,6 @@ section {
   padding: 3rem;
   border-radius: 10px;
   text-align: center;
-  border: 2px solid var(--secondary-color);
 }
 
 .iban-box h4 {

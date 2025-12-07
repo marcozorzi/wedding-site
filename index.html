@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Antonia & Marco - Wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="password.css" />
   <script src="auth.js"></script>
 </head>
+
 <body>
   <!-- Password Protection Screen -->
   <div id="password-screen" class="password-screen">
@@ -19,13 +23,8 @@
       <p class="password-subtitle">Wedding Website</p>
       <div class="password-divider"></div>
       <p class="password-message">Inserisci la password per visualizzare questo sito</p>
-      <input
-        type="password"
-        id="password-input"
-        class="password-input"
-        placeholder="Inserisci password"
-        autocomplete="off"
-      />
+      <input type="password" id="password-input" class="password-input" placeholder="Inserisci password"
+        autocomplete="off" />
       <p id="error-message" class="error-message"></p>
       <button onclick="checkPassword()" class="password-button">Entra</button>
 
@@ -39,223 +38,262 @@
 
   <!-- Main Website Content -->
   <div id="main-content" style="display: none;">
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#home" class="logo">
-        <img src="resources/logo.png" alt="Antonia & Marco" class="logo-img">
-      </a>
-      <ul class="nav-menu">
-        <li><a href="#home" data-en="Home" data-it="Home">Home</a></li>
-        <li><a href="#couple" data-en="Couple" data-it="Coppia">Coppia</a></li>
-        <li><a href="#when-where" data-en="When & Where" data-it="Quando & Dove">Quando & Dove</a></li>
-        <li><a href="#rsvp" data-en="RSVP" data-it="RSVP">RSVP</a></li>
-        <li><a href="#honeymoon" data-en="Honeymoon" data-it="Viaggio di Nozze">Viaggio di Nozze</a></li>
-      </ul>
-      <div class="language-toggle-nav">
-        <button onclick="switchLanguage('it')" class="lang-btn-nav active" id="lang-it-nav">IT</button>
-        <button onclick="switchLanguage('en')" class="lang-btn-nav" id="lang-en-nav">EN</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <p class="hero-subtitle" data-en="We're Getting Married" data-it="Ci Sposiamo">Ci Sposiamo</p>
-      <h1 class="hero-title">Antonia &amp; Marco</h1>
-      <div class="hero-divider"></div>
-      <p class="hero-date" data-en="May 22, 2026" data-it="22 Maggio 2026">22 Maggio 2026</p>
-
-      <!-- Countdown Timer -->
-      <div class="countdown">
-        <div class="countdown-item">
-          <span class="countdown-value" id="days">00</span>
-          <span class="countdown-label" data-en="Days" data-it="Giorni">Giorni</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-value" id="hours">00</span>
-          <span class="countdown-label" data-en="Hours" data-it="Ore">Ore</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-value" id="minutes">00</span>
-          <span class="countdown-label" data-en="Minutes" data-it="Minuti">Minuti</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-value" id="seconds">00</span>
-          <span class="countdown-label" data-en="Seconds" data-it="Secondi">Secondi</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <img src="resources/logo.png" alt="Antonia & Marco" class="logo-img">
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#home" data-en="Home" data-it="Home">Home</a></li>
+          <li><a href="#couple" data-en="Couple" data-it="Coppia">Coppia</a></li>
+          <li><a href="#when-where" data-en="When & Where" data-it="Quando & Dove">Quando & Dove</a></li>
+          <li><a href="#travel" data-en="Travel" data-it="Viaggio">Viaggio</a></li>
+          <li><a href="#rsvp" data-en="RSVP" data-it="RSVP">RSVP</a></li>
+          <li><a href="#honeymoon" data-en="Honeymoon" data-it="Luna di Miele">Luna di Miele</a></li>
+        </ul>
+        <div class="language-toggle-nav">
+          <button onclick="switchLanguage('it')" class="lang-btn-nav active" id="lang-it-nav">IT</button>
+          <button onclick="switchLanguage('en')" class="lang-btn-nav" id="lang-en-nav">EN</button>
         </div>
       </div>
-    </div>
-    <div class="scroll-down">
-      <a href="#couple">
-        <span></span>
-      </a>
-    </div>
-  </section>
+    </nav>
 
-  <!-- The Couple Section -->
-  <section id="couple" class="couple-section">
-    <div class="container">
-      <div class="section-header">
-        <h6 class="section-subtitle" data-en="Happy Couple" data-it="La Coppia">La Coppia</h6>
-        <h2 class="section-title">Antonia &amp; Marco</h2>
-        <div class="section-divider"></div>
-      </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle" data-en="We're Getting Married" data-it="Ci Sposiamo">Ci Sposiamo</p>
+        <h1 class="hero-title">Antonia &amp; Marco</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-date" data-en="May 22, 2026" data-it="22 Maggio 2026">22 Maggio 2026</p>
 
-      <div class="couple-grid">
-        <div class="couple-card">
-          <div class="couple-image">
-            <img src="resources/sposa.jpeg" alt="Antonia" onerror="this.style.display='none'">
+        <!-- Countdown Timer -->
+        <div class="countdown">
+          <div class="countdown-item">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label" data-en="Days" data-it="Giorni">Giorni</span>
           </div>
-          <h3>Antonia</h3>
-          <p class="couple-role" data-en="The Bride" data-it="La Sposa">La Sposa</p>
-          <p class="couple-bio" data-en="A few words about the bride. Her passions, personality, and what makes her special." data-it="Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.">Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.</p>
-        </div>
-
-        <div class="couple-card">
-          <div class="couple-image">
-            <img src="resources/sposo.jpeg" alt="Marco" onerror="this.style.display='none'">
+          <div class="countdown-item">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label" data-en="Hours" data-it="Ore">Ore</span>
           </div>
-          <h3>Marco</h3>
-          <p class="couple-role" data-en="The Groom" data-it="Lo Sposo">Lo Sposo</p>
-          <p class="couple-bio" data-en="A few words about the groom. His passions, personality, and what makes him special." data-it="Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.">Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- When & Where Section -->
-  <section id="when-where" class="when-where-section">
-    <div class="container">
-      <div class="section-header">
-        <h6 class="section-subtitle" data-en="Wedding Details" data-it="Dettagli Matrimonio">Dettagli Matrimonio</h6>
-        <h2 class="section-title" data-en="When & Where" data-it="Quando & Dove">Quando &amp; Dove</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="event-grid">
-        <div class="event-card event-card-single">
-          <div class="event-icon">💒</div>
-          <h4 data-en="Ceremony & Reception" data-it="Cerimonia & Ricevimento">Cerimonia & Ricevimento</h4>
-          <p class="event-time" data-en="Friday, May 22, 2026 at 11:00 AM" data-it="Venerdì, 22 Maggio 2026 alle 11:00">Venerdì, 22 Maggio 2026 alle 11:00</p>
-          <p class="event-location" data-en="Ristorante Le Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)" data-it="Ristorante Le Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)">Ristorante Le Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)</p>
-          <a href="https://maps.google.com/?q=Ristorante+Le+Querce+Via+Talponera+130+Ponzano+Veneto" target="_blank" class="location-link" data-en="View on Map" data-it="Vedi su Mappa">Vedi su Mappa</a>
-        </div>
-      </div>
-
-      <div class="schedule-box">
-        <h4 data-en="Schedule of Events" data-it="Programma">Programma</h4>
-        <p class="schedule-intro" data-en="We are still refining the details but here's a brief overview of our wedding day schedule." data-it="Stiamo ancora definendo i dettagli ma questa è una bozza del programma della nostra giornata.">Stiamo ancora definendo i dettagli ma questa è una bozza del programma della nostra giornata.</p>
-
-        <div class="schedule-list">
-          <div class="schedule-item">
-            <span class="schedule-time">11:00</span>
-            <span class="schedule-event" data-en="Guests Arrive" data-it="Arrivo Ospiti">Arrivo Ospiti</span>
+          <div class="countdown-item">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label" data-en="Minutes" data-it="Minuti">Minuti</span>
           </div>
-          <div class="schedule-item">
-            <span class="schedule-time">11:30</span>
-            <span class="schedule-event" data-en="Ceremony Begins" data-it="Inizio Cerimonia">Inizio Cerimonia</span>
-          </div>
-          <div class="schedule-item">
-            <span class="schedule-time">12:00</span>
-            <span class="schedule-event" data-en="End of ceremony and group pictures" data-it="Fine cerimonia e foto di gruppo">Fine cerimonia e foto di gruppo</span>
-          </div>
-          <div class="schedule-item">
-            <span class="schedule-time">13:00</span>
-            <span class="schedule-event" data-en="Cocktail Hour" data-it="Aperitivo">Aperitivo</span>
-          </div>
-          <div class="schedule-item">
-            <span class="schedule-time">15:00</span>
-            <span class="schedule-event" data-en="Lunch & Reception" data-it="Pranzo & Ricevimento">Pranzo & Ricevimento</span>
-          </div>
-          <div class="schedule-item">
-            <span class="schedule-time">19:00</span>
-            <span class="schedule-event" data-en="Cake & Party" data-it="Torta & Party">Torta & Party</span>
+          <div class="countdown-item">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label" data-en="Seconds" data-it="Secondi">Secondi</span>
           </div>
         </div>
       </div>
-
-      <div class="travel-info">
-        <h4 data-en="Travel & Accommodation" data-it="Viaggio & Alloggio">Viaggio & Alloggio</h4>
-        <p data-en="Coming Soon" data-it="In arrivo">Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.</p>
+      <div class="scroll-down">
+        <a href="#couple">
+          <span></span>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- RSVP Section -->
-  <section id="rsvp" class="rsvp-section">
-    <div class="container">
-      <div class="section-header">
-        <h6 class="section-subtitle" data-en="Join Our Celebration" data-it="Unisciti alla Festa">Unisciti alla Festa</h6>
-        <h2 class="section-title">RSVP</h2>
-        <div class="section-divider"></div>
-        <p data-en="Please confirm your attendance by filling out the form below." data-it="Si prega di confermare la propria presenza compilando il modulo qui sotto.">Si prega di confermare la propria presenza compilando il modulo qui sotto.</p>
-      </div>
+    <!-- The Couple Section -->
+    <section id="couple" class="couple-section">
+      <div class="container">
+        <div class="section-header">
+          <h6 class="section-subtitle" data-en="Happy Couple" data-it="La Coppia">La Coppia</h6>
+          <h2 class="section-title">Antonia &amp; Marco</h2>
+          <div class="section-divider"></div>
+        </div>
 
-      <div class="rsvp-form-container">
-        <!-- Google Form embed -->
-        <iframe
-          src="PASTE_YOUR_GOOGLE_FORM_EMBED_URL_HERE"
-          width="100%"
-          height="800"
-          title="RSVP Form"
-          style="border: 0;">Loading…</iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Honeymoon Section -->
-  <section id="honeymoon" class="honeymoon-section">
-    <div class="container">
-      <div class="section-header">
-        <h6 class="section-subtitle" data-en="Our Honeymoon" data-it="Il Nostro Viaggio di Nozze">Il Nostro Viaggio di Nozze</h6>
-        <h2 class="section-title" data-en="Honeymoon" data-it="Viaggio di Nozze">Viaggio di Nozze</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="honeymoon-content">
-        <p class="honeymoon-intro" data-en="We're traveling to Spain for our honeymoon! If you'd like to contribute to our adventure, we would be incredibly grateful." data-it="Partiremo per la Spagna per il nostro viaggio di nozze! Se desiderate contribuire alla nostra avventura, ne saremmo davvero grati.">Partiremo per la Spagna per il nostro viaggio di nozze! Se desiderate contribuire alla nostra avventura, ne saremmo davvero grati.</p>
-
-        <!-- Photo Gallery -->
-        <div class="honeymoon-gallery">
-          <div class="honeymoon-photo">
-            <img src="resources/spain1.jpg" alt="Spain" onerror="this.style.display='none'">
+        <div class="couple-grid">
+          <div class="couple-card">
+            <div class="couple-image">
+              <img src="resources/sposa.jpeg" alt="Antonia" onerror="this.style.display='none'">
+            </div>
+            <h3>Antonia</h3>
+            <p class="couple-role" data-en="The Bride" data-it="La Sposa">La Sposa</p>
+            <p class="couple-bio"
+              data-en="A few words about the bride. Her passions, personality, and what makes her special."
+              data-it="Alcune parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.">Alcune
+              parole sulla sposa. Le sue passioni, personalità e ciò che la rende speciale.</p>
           </div>
-          <div class="honeymoon-photo">
-            <img src="resources/spain2.jpg" alt="Spain" onerror="this.style.display='none'">
+
+          <div class="couple-card">
+            <div class="couple-image">
+              <img src="resources/sposo.jpeg" alt="Marco" onerror="this.style.display='none'">
+            </div>
+            <h3>Marco</h3>
+            <p class="couple-role" data-en="The Groom" data-it="Lo Sposo">Lo Sposo</p>
+            <p class="couple-bio"
+              data-en="A few words about the groom. His passions, personality, and what makes him special."
+              data-it="Alcune parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.">Alcune
+              parole sullo sposo. Le sue passioni, personalità e ciò che lo rende speciale.</p>
           </div>
-          <div class="honeymoon-photo">
-            <img src="resources/spain3.jpg" alt="Spain" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- When & Where Section -->
+    <section id="when-where" class="when-where-section">
+      <div class="container">
+        <div class="section-header">
+          <h6 class="section-subtitle" data-en="Wedding Details" data-it="Dettagli Matrimonio">Dettagli Matrimonio</h6>
+          <h2 class="section-title" data-en="When & Where" data-it="Quando & Dove">Quando &amp; Dove</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="event-grid">
+          <div class="event-card event-card-single">
+            <div class="event-icon">💒</div>
+            <h4 data-en="Ceremony & Reception" data-it="Cerimonia & Ricevimento">Cerimonia & Ricevimento</h4>
+            <p class="event-time" data-en="Friday, May 22, 2026 at 11:00 AM"
+              data-it="Venerdì, 22 Maggio 2026 alle 11:00">Venerdì, 22 Maggio 2026 alle 11:00</p>
+            <p class="event-location"
+              data-en="Ristorante Le Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)"
+              data-it="Ristorante Le Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)">Ristorante Le
+              Querce<br>Via Talponera, 130/A<br>31050 Ponzano Veneto (TV)</p>
+            <a href="https://maps.google.com/?q=Ristorante+Le+Querce+Via+Talponera+130+Ponzano+Veneto" target="_blank"
+              class="location-link" data-en="View on Map" data-it="Vedi su Mappa">Vedi su Mappa</a>
           </div>
         </div>
 
-        <!-- IBAN Information -->
-        <div class="iban-box">
-          <h4 data-en="Gift Contribution" data-it="Contributo Regalo">Contributo Regalo</h4>
-          <p class="iban-label" data-en="Bank Transfer Details:" data-it="Coordinate Bancarie:">Coordinate Bancarie:</p>
-          <div class="iban-info">
-            <p><strong data-en="Account Holder:" data-it="Intestatario:">Intestatario:</strong> <span data-en="Antonia & Marco" data-it="Antonia & Marco">Antonia & Marco</span></p>
-            <p><strong>IBAN:</strong> <span class="iban-code">IT00 X000 0000 0000 0000 0000 000</span></p>
-            <button class="copy-iban-btn" onclick="copyIBAN()" data-en="Copy IBAN" data-it="Copia IBAN">Copia IBAN</button>
+        <div class="schedule-box">
+          <h4 data-en="Schedule of Events" data-it="Programma">Programma</h4>
+          <p class="schedule-intro"
+            data-en="We are still refining the details but here's a brief overview of our wedding day schedule."
+            data-it="Stiamo ancora definendo i dettagli ma questa è una bozza del programma della nostra giornata.">
+            Stiamo ancora definendo i dettagli ma questa è una bozza del programma della nostra giornata.</p>
+
+          <div class="schedule-list">
+            <div class="schedule-item">
+              <span class="schedule-time">11:00</span>
+              <span class="schedule-event" data-en="Guests Arrive" data-it="Arrivo Ospiti">Arrivo Ospiti</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-time">11:30</span>
+              <span class="schedule-event" data-en="Ceremony Begins" data-it="Inizio Cerimonia">Inizio Cerimonia</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-time">12:00</span>
+              <span class="schedule-event" data-en="End of ceremony and group pictures"
+                data-it="Fine cerimonia e foto di gruppo">Fine cerimonia e foto di gruppo</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-time">13:00</span>
+              <span class="schedule-event" data-en="Cocktail Hour" data-it="Aperitivo">Aperitivo</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-time">15:00</span>
+              <span class="schedule-event" data-en="Lunch & Reception" data-it="Pranzo & Ricevimento">Pranzo &
+                Ricevimento</span>
+            </div>
+            <div class="schedule-item">
+              <span class="schedule-time">19:00</span>
+              <span class="schedule-event" data-en="Cake & Party" data-it="Torta & Party">Torta & Party</span>
+            </div>
           </div>
-          <p class="iban-note" data-en="Your presence is the greatest gift, but if you wish to contribute to our honeymoon, it would mean the world to us." data-it="La vostra presenza è il regalo più grande, ma se desiderate contribuire al nostro viaggio di nozze, significherebbe moltissimo per noi.">La vostra presenza è il regalo più grande, ma se desiderate contribuire al nostro viaggio di nozze, significherebbe moltissimo per noi.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p class="footer-text" data-en="Can't wait to celebrate with you!" data-it="Non vediamo l'ora di festeggiare con voi!">Non vediamo l'ora di festeggiare con voi!</p>
-    <p class="footer-names">Antonia &amp; Marco</p>
-    <p class="footer-date">22 Maggio 2026</p>
-  </footer>
+    <!-- Travel & Accommodation Section -->
+    <section id="travel" class="travel-section">
+      <div class="container">
+        <div class="section-header">
+          <h6 class="section-subtitle" data-en="Travel Information" data-it="Informazioni di Viaggio">Informazioni di Viaggio</h6>
+          <h2 class="section-title" data-en="Travel & Accommodation" data-it="Viaggio & Alloggio">Viaggio & Alloggio</h2>
+          <div class="section-divider"></div>
+        </div>
 
-  <script src="script.js"></script>
-  <script src="language.js"></script>
+        <div class="travel-content">
+          <p data-en="Coming Soon" data-it="In arrivo">Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="rsvp-section">
+      <div class="container">
+        <div class="section-header">
+          <h6 class="section-subtitle" data-en="Join Our Celebration" data-it="Unisciti alla Festa">Unisciti alla Festa
+          </h6>
+          <h2 class="section-title">RSVP</h2>
+          <div class="section-divider"></div>
+          <p data-en="Please confirm your attendance by filling out the form below."
+            data-it="Si prega di confermare la propria presenza compilando il modulo qui sotto.">Si prega di confermare
+            la propria presenza compilando il modulo qui sotto.</p>
+        </div>
+
+        <div class="rsvp-form-container">
+          <!-- Google Form embed -->
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfZByRBsQ6yzi6_EvG2ZjBkblDsKeRd-pr7w8OjAzyKnRk9mQ/viewform?embedded=true"
+            width="100%" height="1615" title="RSVP Form" style="border: 0;">Loading…</iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honeymoon Section -->
+    <section id="honeymoon" class="honeymoon-section">
+      <div class="container">
+        <div class="section-header">
+          <h6 class="section-subtitle" data-en="Our Honeymoon" data-it="Il Nostro Viaggio di Nozze">Il Nostro Viaggio di
+            Nozze</h6>
+          <h2 class="section-title" data-en="Honeymoon" data-it="Viaggio di Nozze">Viaggio di Nozze</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="honeymoon-content">
+          <p class="honeymoon-intro"
+            data-en="We're dreaming of exploring the vibrant cities of Barcelona, Madrid, and Valencia for our honeymoon. While these images are AI-generated for now, we look forward to creating real memories in these beautiful places. Your presence at our wedding is the greatest gift, though any contribution toward our Spanish adventure would be warmly welcomed."
+            data-it="Sogniamo di esplorare le vivaci città di Barcellona, Madrid e Valencia per il nostro viaggio di nozze. Anche se queste immagini sono generate dall'intelligenza artificiale, non vediamo l'ora di creare ricordi veri in questi luoghi meravigliosi. ">
+            Sogniamo di esplorare le vivaci città di Barcellona, Madrid e Valencia per il nostro viaggio di nozze. Anche
+            se queste immagini sono generate dall'intelligenza artificiale, non vediamo l'ora di creare ricordi veri in
+            questi luoghi meravigliosi.</p>
+
+          <!-- Photo Gallery -->
+          <div class="honeymoon-gallery">
+            <div class="honeymoon-photo">
+              <img src="resources/spain1.jpeg" alt="Spain" onerror="this.style.display='none'">
+            </div>
+            <div class="honeymoon-photo">
+              <img src="resources/spain2.jpeg" alt="Spain" onerror="this.style.display='none'">
+            </div>
+            <div class="honeymoon-photo">
+              <img src="resources/spain3.jpeg" alt="Spain" onerror="this.style.display='none'">
+            </div>
+          </div>
+
+          <!-- IBAN Information -->
+          <div class="iban-box">
+            <!-- <h4 data-en="Gift Contribution" data-it="Contributo Regalo">Contributo Regalo</h4> -->
+            <div class="iban-info">
+              <p><strong data-en="Account Holder:" data-it="Intestatario:">Intestatario:</strong> <span
+                  data-en="Antonia & Marco" data-it="Antonia & Marco">Antonia & Marco</span></p>
+              <p><strong>IBAN:</strong> <span class="iban-code">IT05 T036 6901 6009 2463 5318 826</span></p>
+              <button class="copy-iban-btn" onclick="copyIBAN()" data-en="Copy IBAN" data-it="Copia IBAN">Copia
+                IBAN</button>
+            </div>
+            <p class="iban-note"
+              data-en="Your presence is the greatest gift, but if you wish you can contribute to our honeymoon."
+              data-it="La vostra presenza è il regalo più grande, ma se desiderate contribuire al nostro viaggio di nozze, significherebbe moltissimo per noi.">
+              La vostra presenza è il regalo più grande, ma se desiderate potete contribuire al nostro viaggio di nozze</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text" data-en="Can't wait to celebrate with you!"
+        data-it="Non vediamo l'ora di festeggiare con voi!">Non vediamo l'ora di festeggiare con voi!</p>
+      <p class="footer-names">Antonia &amp; Marco</p>
+      <p class="footer-date">22 Maggio 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="language.js"></script>
   </div>
   <!-- End Main Content -->
 </body>
+
 </html>

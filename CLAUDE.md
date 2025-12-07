@@ -24,16 +24,65 @@ This is a static wedding website built with vanilla HTML and CSS, designed to be
 - No build process required - site deploys directly from the repository
 - Git-based deployment: push to `main` branch triggers automatic deployment
 
+## Key Information
+
+### Wedding Details
+- **Date**: May 22, 2026 at 11:00 AM
+- **Venue**: Ristorante Le Querce, Via Talponera, 130/A, 31050 Ponzano Veneto (TV)
+- **Ceremony & Reception**: Same location
+- **Honeymoon**: Spain
+
+### Google Forms
+- **RSVP Form**: https://docs.google.com/forms/d/e/1FAIpQLSfZByRBsQ6yzi6_EvG2ZjBkblDsKeRd-pr7w8OjAzyKnRk9mQ/viewform?embedded=true
+
+### Password Protection
+- Password managed in [auth.js:4](auth.js#L4)
+- Current password: `22maggio2026`
+
+### IBAN for Honeymoon Contributions
+- Update IBAN code in [index.html:233](index.html#L233)
+- Currently placeholder: `IT00 X000 0000 0000 0000 0000 000`
+
 ## Key Customization Points
 
 When personalizing this site, focus on these areas:
-1. **Names and date** in [index.html:13-15](index.html#L13-L15)
-2. **Google Form RSVP URL** at [index.html:52](index.html#L52)
-3. **Hero background image**: Add `hero.jpg` to the root directory
-4. **Wedding details**: Update ceremony time, venue, and address in the details section
-5. **Story and travel information**: Replace placeholder text with actual content
+1. **Couple photos**: Add `bride.jpg` and `groom.jpg` to `resources/` folder
+2. **Spain honeymoon photos**: Add `spain1.jpg`, `spain2.jpg`, `spain3.jpg` to `resources/` folder
+3. **IBAN**: Replace placeholder IBAN in honeymoon section
+4. **Couple bios**: Update descriptions in the couple section
+5. **Travel information**: Add details about airports, hotels, etc.
 
 ## Assets Required
 
-- `hero.jpg`: Background image for the hero section (referenced in [style.css:17](style.css#L17))
-- Optional: favicon and additional images for the story/travel sections
+- `resources/hero.jpg`: Hero section background (✓ added)
+- `resources/logo.png`: Navigation logo (✓ added)
+- `resources/bride.jpg`: Antonia's photo (optional)
+- `resources/groom.jpg`: Marco's photo (optional)
+- `resources/spain1.jpg`, `spain2.jpg`, `spain3.jpg`: Honeymoon photos (optional)
+
+## Recent Changes Summary
+
+### Design & Colors
+- Color scheme: Green (#a2b49b) and Pink (#e2c6c3)
+- Elegant typography: Cormorant Garamond (serif) + Montserrat (sans-serif)
+- Password-protected with bilingual support (Italian default, English secondary)
+
+### Sections
+1. **Home/Hero**: Countdown timer to wedding date
+2. **Coppia (Couple)**: Profile cards for Antonia & Marco
+3. **Quando & Dove (When & Where)**: Venue details, schedule, travel info
+4. **RSVP**: Google Form embedded
+5. **Viaggio di Nozze (Honeymoon)**: Spain trip with photo gallery and IBAN for contributions
+
+### Technical Notes
+- All images organized in `resources/` folder
+- Smooth scroll navigation with language toggle (IT/EN)
+- Copy IBAN functionality with visual feedback
+- Mobile-responsive design
+- No build process - static HTML/CSS/JS deployed directly to Netlify
+
+## Colors
+Primary Color (Green - #a2b49b)
+Secondary Color (Pink - #e2c6c3) 
+Dark Gray (#2c2c2c)
+White 
