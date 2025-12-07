@@ -470,14 +470,15 @@ section {
   margin-bottom: 1rem;
 }
 
-.schedule-intro {
-  text-align: center;
+.schedule-box .schedule-intro {
+  text-align: center !important;
   font-size: 1rem;
   color: var(--text-color);
-  margin: 0 auto 2.5rem auto;
+  margin: 0 auto 2.5rem auto !important;
   padding: 0 1rem;
   line-height: 1.7;
   max-width: 600px;
+  display: block;
 }
 
 .schedule-list {
