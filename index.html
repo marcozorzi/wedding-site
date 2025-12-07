@@ -50,6 +50,7 @@
         <li><a href="#couple" data-en="Couple" data-it="Coppia">Coppia</a></li>
         <li><a href="#when-where" data-en="When & Where" data-it="Quando & Dove">Quando & Dove</a></li>
         <li><a href="#rsvp" data-en="RSVP" data-it="RSVP">RSVP</a></li>
+        <li><a href="#honeymoon" data-en="Honeymoon" data-it="Viaggio di Nozze">Viaggio di Nozze</a></li>
       </ul>
       <div class="language-toggle-nav">
         <button onclick="switchLanguage('it')" class="lang-btn-nav active" id="lang-it-nav">IT</button>
@@ -195,6 +196,46 @@
           height="800"
           title="RSVP Form"
           style="border: 0;">Loading…</iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honeymoon Section -->
+  <section id="honeymoon" class="honeymoon-section">
+    <div class="container">
+      <div class="section-header">
+        <h6 class="section-subtitle" data-en="Our Honeymoon" data-it="Il Nostro Viaggio di Nozze">Il Nostro Viaggio di Nozze</h6>
+        <h2 class="section-title" data-en="Honeymoon" data-it="Viaggio di Nozze">Viaggio di Nozze</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="honeymoon-content">
+        <p class="honeymoon-intro" data-en="We're traveling to Spain for our honeymoon! If you'd like to contribute to our adventure, we would be incredibly grateful." data-it="Partiremo per la Spagna per il nostro viaggio di nozze! Se desiderate contribuire alla nostra avventura, ne saremmo davvero grati.">Partiremo per la Spagna per il nostro viaggio di nozze! Se desiderate contribuire alla nostra avventura, ne saremmo davvero grati.</p>
+
+        <!-- Photo Gallery -->
+        <div class="honeymoon-gallery">
+          <div class="honeymoon-photo">
+            <img src="resources/spain1.jpg" alt="Spain" onerror="this.style.display='none'">
+          </div>
+          <div class="honeymoon-photo">
+            <img src="resources/spain2.jpg" alt="Spain" onerror="this.style.display='none'">
+          </div>
+          <div class="honeymoon-photo">
+            <img src="resources/spain3.jpg" alt="Spain" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <!-- IBAN Information -->
+        <div class="iban-box">
+          <h4 data-en="Gift Contribution" data-it="Contributo Regalo">Contributo Regalo</h4>
+          <p class="iban-label" data-en="Bank Transfer Details:" data-it="Coordinate Bancarie:">Coordinate Bancarie:</p>
+          <div class="iban-info">
+            <p><strong data-en="Account Holder:" data-it="Intestatario:">Intestatario:</strong> <span data-en="Antonia & Marco" data-it="Antonia & Marco">Antonia & Marco</span></p>
+            <p><strong>IBAN:</strong> <span class="iban-code">IT00 X000 0000 0000 0000 0000 000</span></p>
+            <button class="copy-iban-btn" onclick="copyIBAN()" data-en="Copy IBAN" data-it="Copia IBAN">Copia IBAN</button>
+          </div>
+          <p class="iban-note" data-en="Your presence is the greatest gift, but if you wish to contribute to our honeymoon, it would mean the world to us." data-it="La vostra presenza è il regalo più grande, ma se desiderate contribuire al nostro viaggio di nozze, significherebbe moltissimo per noi.">La vostra presenza è il regalo più grande, ma se desiderate contribuire al nostro viaggio di nozze, significherebbe moltissimo per noi.</p>
+        </div>
       </div>
     </div>
   </section>

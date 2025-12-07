@@ -535,6 +535,124 @@ section {
   border-radius: 5px;
 }
 
+/* Honeymoon Section */
+.honeymoon-section {
+  background: var(--white);
+}
+
+.honeymoon-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.honeymoon-intro {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.honeymoon-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.honeymoon-photo {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.honeymoon-photo:hover {
+  transform: translateY(-5px);
+}
+
+.honeymoon-photo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.iban-box {
+  background: var(--light-bg);
+  padding: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+}
+
+.iban-box h4 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+
+.iban-label {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.iban-info {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.iban-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.iban-code {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.copy-iban-btn {
+  padding: 0.75rem 2rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.copy-iban-btn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(162, 180, 155, 0.3);
+}
+
+.copy-iban-btn:active {
+  transform: translateY(0);
+}
+
+.iban-note {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
 /* Footer */
 .footer {
   background: var(--secondary-color);
@@ -635,6 +753,23 @@ section {
 
   section {
     padding: 60px 0;
+  }
+
+  .honeymoon-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .iban-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .iban-info {
+    padding: 1.5rem;
+  }
+
+  .iban-code {
+    font-size: 0.9rem;
+    word-break: break-all;
   }
 }
 

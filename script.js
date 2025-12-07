@@ -57,3 +57,27 @@ window.addEventListener('scroll', function() {
     navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
   }
 });
+
+// Copy IBAN function
+function copyIBAN() {
+  const ibanCode = document.querySelector('.iban-code').textContent;
+  const button = document.querySelector('.copy-iban-btn');
+  const currentLang = localStorage.getItem('preferredLanguage') || 'it';
+
+  // Copy to clipboard
+  navigator.clipboard.writeText(ibanCode).then(function() {
+    // Change button text to show success
+    const originalText = button.textContent;
+    button.textContent = currentLang === 'it' ? 'Copiato!' : 'Copied!';
+    button.style.background = '#4CAF50';
+
+    // Reset button after 2 seconds
+    setTimeout(function() {
+      button.textContent = originalText;
+      button.style.background = '';
+    }, 2000);
+  }).catch(function(err) {
+    console.error('Failed to copy IBAN: ', err);
+    alert(currentLang === 'it' ? 'Impossibile copiare l\'IBAN' : 'Failed to copy IBAN');
+  });
+}
