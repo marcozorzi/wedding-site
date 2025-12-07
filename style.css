@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
-  --primary-color: #b89146;
-  --secondary-color: #2c2c2c;
+  --primary-color: #a2b49b;
+  --secondary-color: #e2c6c3;
   --text-color: #555;
   --light-bg: #f9f9f9;
   --white: #ffffff;
@@ -240,7 +240,7 @@ section {
   font-family: var(--font-serif);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   margin-bottom: 1.5rem;
 }
 
@@ -274,7 +274,7 @@ section {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 2rem;
-  border: 5px solid var(--primary-color);
+  border: 5px solid var(--secondary-color);
 }
 
 .couple-image img {
@@ -287,7 +287,7 @@ section {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   margin-bottom: 0.5rem;
 }
 
@@ -296,7 +296,7 @@ section {
   font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 1.5rem;
 }
 
@@ -369,7 +369,7 @@ section {
   font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   margin-bottom: 0.5rem;
 }
 
@@ -411,13 +411,13 @@ section {
   font-family: var(--font-serif);
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   margin-bottom: 1rem;
 }
 
 .event-time {
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 1rem;
 }
 
@@ -438,7 +438,7 @@ section {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -467,7 +467,7 @@ section {
 
 .schedule-event {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: #2c2c2c;
 }
 
 /* Travel Info */
@@ -481,7 +481,7 @@ section {
   font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: #2c2c2c;
   margin-bottom: 1rem;
 }
 
@@ -511,7 +511,7 @@ section {
 /* Footer */
 .footer {
   background: var(--secondary-color);
-  color: var(--white);
+  color: #555;
   text-align: center;
   padding: 3rem 2rem;
 }
@@ -520,6 +520,7 @@ section {
   font-family: var(--font-serif);
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #555;
 }
 
 .footer-names {
@@ -534,6 +535,7 @@ section {
   font-size: 0.9rem;
   opacity: 0.8;
   letter-spacing: 0.1em;
+  color: #555;
 }
 
 /* Responsive Design */
