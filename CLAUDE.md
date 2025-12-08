@@ -37,11 +37,13 @@ This is a static wedding website built with vanilla HTML and CSS, designed to be
 
 ### Password Protection
 - Password managed in [auth.js:4](auth.js#L4)
-- Current password: `22maggio2026`
+- Current password: `22052026`
+- Password required on every visit (no session storage)
 
 ### IBAN for Honeymoon Contributions
-- Update IBAN code in [index.html:233](index.html#L233)
-- Currently placeholder: `IT00 X000 0000 0000 0000 0000 000`
+- IBAN code in [index.html:272](index.html#L272)
+- Account holder: Antonia D'Onofrio & Marco Zorzi
+- IBAN: `IT05T0366901600924635318826`
 
 ## Key Customization Points
 

@@ -35,6 +35,16 @@ function switchLanguage(lang) {
     activeLangBtnNav.classList.add('active');
   }
 
+  // Update password screen login text
+  const passwordLoginMessage = document.querySelector('.password-subtitle');
+  if (passwordLoginMessage && !passwordLoginMessage.hasAttribute('data-en')) {
+    if (lang === 'it') {
+      passwordLoginMessage.textContent = 'Sito del matrimonio';
+    } else {
+      passwordLoginMessage.textContent = 'Wedding Website';
+    }
+  }
+
   // Update password screen text
   const passwordMessage = document.querySelector('.password-message');
   if (passwordMessage && !passwordMessage.hasAttribute('data-en')) {
