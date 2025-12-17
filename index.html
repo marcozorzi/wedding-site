@@ -203,7 +203,146 @@
         </div>
 
         <div class="travel-content">
-          <p data-en="We are connecting with local hotels to provide the best options for our guests." data-it="Stiamo collaborando con hotel locali per offrire le migliori opzioni ai nostri ospiti.">Informazioni su aeroporti, stazioni ferroviarie e hotel consigliati per i nostri ospiti.</p>
+          <p class="travel-intro" data-en="We have partnered with local hotels to offer special rates for our wedding guests. Click on each hotel to see full details and booking information." data-it="Abbiamo collaborato con hotel locali per offrire tariffe speciali ai nostri ospiti. Clicca su ogni hotel per vedere i dettagli completi e le informazioni di prenotazione.">Abbiamo collaborato con hotel locali per offrire tariffe speciali ai nostri ospiti. Clicca su ogni hotel per vedere i dettagli completi e le informazioni di prenotazione.</p>
+
+          <!-- Hotel Cards -->
+          <div class="hotels-container">
+
+            <!-- Hotel 1: Le Terrazze -->
+            <div class="hotel-card">
+              <div class="hotel-header" onclick="toggleHotel('hotel1')">
+                <div class="hotel-summary">
+                  <h4 class="hotel-name">Hotel Le Terrazze</h4>
+                  <p class="hotel-distance" data-en="Near the venue" data-it="Vicino alla location">Vicino alla location</p>
+                  <p class="hotel-price" data-en="From €55/person per night" data-it="Da €55/persona a notte">Da €55/persona a notte</p>
+                </div>
+                <span class="hotel-toggle" id="hotel1-toggle">▼</span>
+              </div>
+
+              <div class="hotel-details" id="hotel1-details" style="display: none;">
+
+                <!-- Availability -->
+                <div class="hotel-section">
+                  <h5 data-en="Availability" data-it="Disponibilità">Disponibilità</h5>
+                  <ul>
+                    <li data-en="May 21: approximately 5-10 rooms" data-it="21 Maggio: circa 5-10 camere">21 Maggio: circa 5-10 camere</li>
+                    <li data-en="May 22: 26 rooms (including 3-5 singles)" data-it="22 Maggio: 26 camere (di cui 3-5 singole)">22 Maggio: 26 camere (di cui 3-5 singole)</li>
+                  </ul>
+                </div>
+
+                <!-- Rates -->
+                <div class="hotel-section">
+                  <h5 data-en="Rates (per night, VAT included)" data-it="Tariffe (a notte, IVA inclusa)">Tariffe (a notte, IVA inclusa)</h5>
+                  <table class="rates-table">
+                    <thead>
+                      <tr>
+                        <th data-en="Room Type" data-it="Tipologia Camera">Tipologia Camera</th>
+                        <th data-en="Per Person" data-it="A Persona">A Persona</th>
+                        <th data-en="Per Room" data-it="A Camera">A Camera</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Business</td>
+                        <td>€55,00</td>
+                        <td>€110,00</td>
+                      </tr>
+                      <tr>
+                        <td>Relax Superior</td>
+                        <td>€60,00</td>
+                        <td>€120,00</td>
+                      </tr>
+                      <tr>
+                        <td data-en="Single Use Business" data-it="Doppia Uso Singola Business">Doppia Uso Singola Business</td>
+                        <td>€99,00</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="tax-note" data-en="Tourist tax: €2.00 per person per day (for guests 14+)" data-it="Tassa di soggiorno: €2,00 per persona al giorno (per ospiti dai 14 anni in su)"><em>Tassa di soggiorno: €2,00 per persona al giorno (per ospiti dai 14 anni in su)</em></p>
+                </div>
+
+                <!-- Room Types -->
+                <div class="hotel-section">
+                  <h5 data-en="Room Types" data-it="Tipologie Camere">Tipologie Camere</h5>
+                  <div class="room-type">
+                    <strong>Business Room (22 mq)</strong>
+                    <p data-en="Welcoming and bright, furnished in modern style with small balcony and internal courtyard view. The ideal environment for business travelers." data-it="Accoglienti e luminose, arredate in stile moderno, con balconcino e vista sulla corte interna. L'ambiente ideale per chi viaggia per lavoro.">Accoglienti e luminose, arredate in stile moderno, con balconcino e vista sulla corte interna. L'ambiente ideale per chi viaggia per lavoro.</p>
+                  </div>
+                  <div class="room-type">
+                    <strong>Relax Superior (32 mq)</strong>
+                    <p data-en="Designer rooms with King Size beds, panoramic terrace and relaxing views of the Venetian countryside crossed by the Piavesella waterway. Available in double or twin beds." data-it="Camere di design con letti King Size, terrazza panoramica e uno scenario distensivo sulla campagna veneta attraversata dal corso d'acqua della Piavesella. Disponibili in versione matrimoniale o con letti separati.">Camere di design con letti King Size, terrazza panoramica e uno scenario distensivo sulla campagna veneta attraversata dal corso d'acqua della Piavesella. Disponibili in versione matrimoniale o con letti separati.</p>
+                  </div>
+                </div>
+
+                <!-- Services Included -->
+                <div class="hotel-section">
+                  <h5 data-en="Services Included" data-it="Servizi Inclusi">Servizi Inclusi</h5>
+                  <ul>
+                    <li data-en="Breakfast: 7:00 AM - 10:00 AM" data-it="Colazione: dalle 7:00 alle 10:00">Colazione: dalle 7:00 alle 10:00</li>
+                    <li data-en="Check-out: by 11:00 AM" data-it="Check-out: entro le 11:00">Check-out: entro le 11:00</li>
+                    <li data-en="Outdoor parking and garage" data-it="Parcheggio esterno e garage">Parcheggio esterno e garage</li>
+                    <li data-en="Wi-Fi and SKY TV channels" data-it="Wi-Fi e canali SKY TV">Wi-Fi e canali SKY TV</li>
+                    <li data-en="Complimentary water bottle per room" data-it="Bottiglietta d'acqua in omaggio">Bottiglietta d'acqua in omaggio</li>
+                  </ul>
+                </div>
+
+                <!-- Useful Info -->
+                <div class="hotel-section">
+                  <h5 data-en="Useful Information" data-it="Informazioni Utili">Informazioni Utili</h5>
+                  <ul>
+                    <li data-en="Check-in: Rooms cannot be guaranteed before 12:00 PM" data-it="Check-in: Non possiamo assicurare il check-in delle camere prima delle ore 12:00"><strong data-en="Check-in:" data-it="Check-in:">Check-in:</strong> Non possiamo assicurare il check-in delle camere prima delle ore 12:00</li>
+                    <li data-en="Luggage Storage: Guests arriving in the morning (e.g., 10:00 AM) can leave luggage in a dedicated room" data-it="Deposito Bagagli: Chi arriva al mattino (es. alle 10:00) potrà lasciare i bagagli in una sala dedicata"><strong data-en="Luggage Storage:" data-it="Deposito Bagagli:">Deposito Bagagli:</strong> Chi arriva al mattino (es. alle 10:00) potrà lasciare i bagagli in una sala dedicata</li>
+                  </ul>
+                </div>
+
+                <!-- Booking Conditions -->
+                <div class="hotel-section">
+                  <h5 data-en="Booking Terms" data-it="Condizioni di Prenotazione">Condizioni di Prenotazione</h5>
+                  <ul>
+                    <li data-en="Payment: 50% deposit required via bank transfer or credit card upon confirmation, balance due 7 days before arrival" data-it="Pagamento: Richiesta caparra del 50% tramite bonifico o carta di credito al momento della conferma, con saldo da versare 7 giorni prima dell'arrivo"><strong data-en="Payment:" data-it="Pagamento:">Pagamento:</strong> Richiesta caparra del 50% tramite bonifico o carta di credito al momento della conferma, con saldo da versare 7 giorni prima dell'arrivo</li>
+                    <li data-en="Reservation deadline: January 31, 2026" data-it="Scadenza prenotazione: 31 Gennaio 2026"><strong data-en="Deadline:" data-it="Scadenza:">Scadenza:</strong> 31 Gennaio 2026</li>
+                  </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="hotel-contact">
+                  <h5 data-en="Contact Information" data-it="Informazioni di Contatto">Informazioni di Contatto</h5>
+                  <p data-en="To book, please mention you are attending Antonia & Marco's wedding." data-it="Per prenotare, si prega di menzionare che si partecipa al matrimonio di Antonia & Marco.">Per prenotare, si prega di menzionare che si partecipa al matrimonio di Antonia & Marco.</p>
+                  <div class="contact-links">
+                    <a href="tel:+390422123456" class="contact-link">
+                      <span class="contact-icon">📞</span>
+                      <span class="contact-text">+39 0422 123 456</span>
+                    </a>
+                    <a href="mailto:info@hotelterrazze.it" class="contact-link">
+                      <span class="contact-icon">✉️</span>
+                      <span class="contact-text">info@hotelterrazze.it</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Hotel 2: Placeholder -->
+            <div class="hotel-card">
+              <div class="hotel-header" onclick="toggleHotel('hotel2')">
+                <div class="hotel-summary">
+                  <h4 class="hotel-name" data-en="Hotel 2 - Coming Soon" data-it="Hotel 2 - In arrivo">Hotel 2 - In arrivo</h4>
+                  <p class="hotel-distance" data-en="Details coming soon" data-it="Dettagli in arrivo">Dettagli in arrivo</p>
+                  <p class="hotel-price" data-en="Rates to be confirmed" data-it="Tariffe da confermare">Tariffe da confermare</p>
+                </div>
+                <span class="hotel-toggle" id="hotel2-toggle">▼</span>
+              </div>
+
+              <div class="hotel-details" id="hotel2-details" style="display: none;">
+                <div class="hotel-section">
+                  <p data-en="We are currently finalizing details with this hotel. Information will be available soon." data-it="Stiamo finalizzando i dettagli con questo hotel. Le informazioni saranno disponibili a breve.">Stiamo finalizzando i dettagli con questo hotel. Le informazioni saranno disponibili a breve.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

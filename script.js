@@ -81,3 +81,17 @@ function copyIBAN() {
     alert(currentLang === 'it' ? 'Impossibile copiare l\'IBAN' : 'Failed to copy IBAN');
   });
 }
+
+// Hotel accordion toggle
+function toggleHotel(hotelId) {
+  const details = document.getElementById(hotelId + '-details');
+  const toggle = document.getElementById(hotelId + '-toggle');
+
+  if (details.style.display === 'none' || details.style.display === '') {
+    details.style.display = 'block';
+    toggle.textContent = '▲';
+  } else {
+    details.style.display = 'none';
+    toggle.textContent = '▼';
+  }
+}
